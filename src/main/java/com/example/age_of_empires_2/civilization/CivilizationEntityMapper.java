@@ -1,5 +1,6 @@
-package com.example.age_of_empires_2.external.storage;
+package com.example.age_of_empires_2.civilization;
 
+import com.example.age_of_empires_2.civilization.CivilizationEntity;
 import com.example.age_of_empires_2.external.api.response.Civilization;
 import org.mapstruct.Mapper;
 

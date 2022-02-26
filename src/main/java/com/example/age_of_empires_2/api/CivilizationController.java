@@ -1,9 +1,9 @@
 package com.example.age_of_empires_2.api;
 
-import com.example.age_of_empires_2.external.api.CivilizationApiService;
+import com.example.age_of_empires_2.civilization.CivilizationEntity;
+import com.example.age_of_empires_2.civilization.CivilizationService;
 import com.example.age_of_empires_2.external.api.response.Civilization;
-import com.example.age_of_empires_2.external.storage.CivilizationEntity;
-import com.example.age_of_empires_2.external.storage.CivilizationService;
+import com.example.age_of_empires_2.external.openapi.proxy.CivilizationProxy;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -17,8 +17,9 @@ import java.util.stream.Collectors;
 @AllArgsConstructor
 public class CivilizationController {
 
-    CivilizationApiService civilizationApiService;
     CivilizationService civilizationService;
+    CivilizationProxy civilizationProxy;
+
 
     @GetMapping("/search")
     public List<CivilizationEntity> searchForCivilizations(
@@ -28,7 +29,7 @@ public class CivilizationController {
         List<CivilizationEntity> civilizations = civilizationService.findAll();
 
         if(civilizations.size() == 0) {
-            List<Civilization> grabedCivilizations = civilizationApiService.getAllCivilizations();
+            List<Civilization> grabedCivilizations = civilizationProxy.getCivilizations().getCivilizations();
             civilizationService.saveCivilizations(grabedCivilizations);
             civilizations = civilizationService.findAll();
         }
@@ -40,5 +41,4 @@ public class CivilizationController {
 
         return foundedCivilizations;
     }
-
 }
