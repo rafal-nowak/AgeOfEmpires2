@@ -26,4 +26,5 @@ public class CivilizationService {
         }
         civilizationRepository.saveAll(civilizationEntities);
     }
+
 }
