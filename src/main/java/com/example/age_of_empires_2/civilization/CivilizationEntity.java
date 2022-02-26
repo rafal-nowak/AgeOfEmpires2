@@ -1,4 +1,4 @@
-package com.example.age_of_empires_2.external.storage;
+package com.example.age_of_empires_2.civilization;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

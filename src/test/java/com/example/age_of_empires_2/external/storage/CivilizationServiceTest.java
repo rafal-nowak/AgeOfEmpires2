@@ -1,5 +1,8 @@
 package com.example.age_of_empires_2.external.storage;
 
+import com.example.age_of_empires_2.civilization.CivilizationEntity;
+import com.example.age_of_empires_2.civilization.CivilizationRepository;
+import com.example.age_of_empires_2.civilization.CivilizationService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -10,8 +13,6 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.Arrays;
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 @ExtendWith(MockitoExtension.class)
 class CivilizationServiceTest {

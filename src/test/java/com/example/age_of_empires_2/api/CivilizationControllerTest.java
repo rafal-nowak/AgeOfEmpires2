@@ -1,7 +1,7 @@
 package com.example.age_of_empires_2.api;
 
-import com.example.age_of_empires_2.external.storage.CivilizationEntity;
-import com.example.age_of_empires_2.external.storage.CivilizationService;
+import com.example.age_of_empires_2.civilization.CivilizationEntity;
+import com.example.age_of_empires_2.civilization.CivilizationService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

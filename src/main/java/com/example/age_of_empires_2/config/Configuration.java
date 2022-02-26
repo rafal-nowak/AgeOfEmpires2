@@ -1,6 +1,6 @@
 package com.example.age_of_empires_2.config;
 
-import com.example.age_of_empires_2.external.storage.CivilizationEntityMapper;
+import com.example.age_of_empires_2.civilization.CivilizationEntityMapper;
 import org.mapstruct.factory.Mappers;
 import org.springframework.context.annotation.Bean;
 
