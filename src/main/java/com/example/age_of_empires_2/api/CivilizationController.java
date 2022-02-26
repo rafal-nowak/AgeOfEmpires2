@@ -53,7 +53,12 @@ public class CivilizationController {
             civilizations = civilizationService.findAll();
         }
 
-        return civilizations;
+        List<CivilizationEntity> foundedCivilizations = civilizations
+                .stream()
+                .filter(civilization -> civilization.getArmy_type().contains(army_type) && civilization.getExpansion().contains(expansion))
+                .collect(Collectors.toList());
+
+        return foundedCivilizations;
     }
 
 }
