@@ -1,4 +1,4 @@
-package com.example.age_of_empires_2.external.api.response;
+package com.example.age_of_empires_2.external.openapi.response;
 
 import lombok.Data;
 import lombok.ToString;

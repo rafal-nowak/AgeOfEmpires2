@@ -1,7 +1,7 @@
 package com.example.age_of_empires_2.external.api;
 
-import com.example.age_of_empires_2.external.api.response.Civilization;
-import com.example.age_of_empires_2.external.api.response.CivilizationsApiResponse;
+import com.example.age_of_empires_2.external.openapi.response.Civilization;
+import com.example.age_of_empires_2.external.openapi.response.CivilizationsApiResponse;
 import org.springframework.stereotype.Service;
 import retrofit2.Response;
 import retrofit2.Retrofit;

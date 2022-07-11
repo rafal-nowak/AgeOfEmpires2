@@ -1,9 +1,6 @@
 package com.example.age_of_empires_2.civilization;
 
-import com.example.age_of_empires_2.civilization.CivilizationEntity;
-import com.example.age_of_empires_2.civilization.CivilizationEntityMapper;
-import com.example.age_of_empires_2.civilization.CivilizationRepository;
-import com.example.age_of_empires_2.external.api.response.Civilization;
+import com.example.age_of_empires_2.external.openapi.response.Civilization;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

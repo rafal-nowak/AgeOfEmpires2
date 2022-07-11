@@ -1,6 +1,6 @@
 package com.example.age_of_empires_2.external.api;
 
-import com.example.age_of_empires_2.external.api.response.CivilizationsApiResponse;
+import com.example.age_of_empires_2.external.openapi.response.CivilizationsApiResponse;
 import retrofit2.Call;
 import retrofit2.http.GET;
 
