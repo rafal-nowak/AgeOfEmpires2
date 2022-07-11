@@ -6,7 +6,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
 
 @org.springframework.context.annotation.Configuration
-@EnableFeignClients(basePackages = "com.example.age_of_empires_2.external.openapi.proxy")
+@EnableFeignClients(basePackages = "com.example.age_of_empires_2.external.api.proxy")
 public class Configuration {
 
     @Bean

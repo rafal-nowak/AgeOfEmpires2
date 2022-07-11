@@ -1,6 +1,6 @@
-package com.example.age_of_empires_2.external.openapi.proxy;
+package com.example.age_of_empires_2.external.api.proxy;
 
-import com.example.age_of_empires_2.external.openapi.response.CivilizationsApiResponse;
+import com.example.age_of_empires_2.external.api.response.CivilizationsApiResponse;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 

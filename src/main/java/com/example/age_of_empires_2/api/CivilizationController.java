@@ -2,8 +2,8 @@ package com.example.age_of_empires_2.api;
 
 import com.example.age_of_empires_2.civilization.CivilizationEntity;
 import com.example.age_of_empires_2.civilization.CivilizationService;
-import com.example.age_of_empires_2.external.openapi.response.Civilization;
-import com.example.age_of_empires_2.external.openapi.proxy.CivilizationProxy;
+import com.example.age_of_empires_2.external.api.response.Civilization;
+import com.example.age_of_empires_2.external.api.proxy.CivilizationProxy;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
